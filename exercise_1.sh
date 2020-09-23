@@ -5,3 +5,5 @@ rm uniqpair.txt
 
 cat "$1" | cut -d , -f 1,2 | sed -E 's/,/ /g' | grep "female" | sort -n -k 2 | uniq -f 1 >> uniqpair.txt
 cat "$1" | cut -d , -f 1,2 | sed -E 's/,/ /g' | grep -w "male" | sort -n -k 2 | uniq -f 1 >> uniqpair.txt
+
+cat uniqpair.txt

@@ -1,4 +1,4 @@
-#Usage bash exeise_2.sh filename
+#Usage bash exercise_2.sh filename
 #Identify highest and lowest earners, as well as the number of women in the top 10 earners
 
 echo "lowest earner"

@@ -9,5 +9,4 @@ cat wages.csv | sort -k4,4 -t "," wages.csv | cut -d , -f 1-2,4 | tail -n 2 | he
 
 Echo “females in the top 10 of earners”
 
-cat wages.csv | sort -k4,4 -t "," wages.csv | cut -d , -f 1-2,4 | tail -n 11 | grep - E “female” | wc -l
-
+cat wages.csv | sort -k4,4 -t "," wages.csv | cut -d , -f 1-2,4 | tail -n 11 | grep -E “female” | wc -l

@@ -1,4 +1,7 @@
- cat wages.csv | sort -k4,4 -t "," wages.csv | cut -d , -f 1-2,4 | tail -n 11 | grep -E "female"| wc -echo "lowest earner"
+#Usage bash exercise_2.sh filename
+#Identify highest and lowest earners, as well as the number of women in the top 10 earners
+
+cat wages.csv | sort -k4,4 -t "," wages.csv | cut -d , -f 1-2,4 | tail -n 11 | grep -E "female"| wc -echo "lowest earner"
 
 cat wages.csv | sort -k4,4 -t "," wages.csv | cut -d , -f 1-2,4 | head -n 1 
 
